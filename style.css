@@ -1,0 +1,166 @@
+/* ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+     max-width: 1280px;
+     margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.botaocontato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.botaocontato button:hover{
+    box-shadow: 5px 5px 5px #5c5c5c;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: rgba(255, 0, 0, 0.879);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imglogo{
+    height: 180px; 
+    width: 180px;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 40px;
+}
+
+/* TOPO DO SITE */
+section.topodosite{
+    padding: 40px 4%;
+}
+
+section.topodosite .flex{
+    align-items: center;
+    justify-items: center;
+    gap: 150px;
+}
+
+.topodosite h1{
+    color: #fff;
+    font-size: 33px;
+    line-height: 40px;
+}
+
+.txtTopoSite h1 span{
+    color: rgba(255, 0, 0, 0.879);
+}
+
+.txtTopoSite p{
+    color: #fff;
+    font-size: 23px;
+    line-height: 30px;
+    margin: 40px 0;
+}
+
+.txtTopoSite p span{
+    color: rgba(255, 0, 0, 0.879);
+}
+
+.imgTopoSite img{
+    height: 320px;
+    width: 383px;
+}
+
+.imgTopoSite img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*ESPECIALIDADES*/
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+.especialidades .especialidadesbox{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 1s;
+}
+
+.especialidades .especialidadesbox:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px #ff0000;
+}
+
+.especialidades .especialidadesbox i{
+    font-size: 70px;
+    color: #ff0000;
+}
+
+.especialidades .especialidadesbox h3{
+    font-size: 23px;
+    margin: 15px 0;
+}
